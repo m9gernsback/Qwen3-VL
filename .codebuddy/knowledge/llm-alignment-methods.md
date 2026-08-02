@@ -4,7 +4,9 @@ Reference notes on the post-training / alignment toolbox: what each method is, t
 math, why it exists, and its characteristic failure modes. Written in the context of diagnosing
 position bias in VLM comparison prompts — companion to `qwen3vl-4b-position-bias.md`, whose core
 lesson ("the bias lives in the data/reward signal, not the algorithm") is the thread connecting
-all methods below.
+all methods below. The loss-function math (softmax, cross-entropy, Bradley–Terry, KL divergence,
+π_θ/π_ref notation, the DPO derivation) is expanded in `llm-alignment-math.md`; the update-rule
+comparison (PPO vs DPO vs GRPO gradients) is in `llm-alignment-gradients.md`.
 
 Two categories:
 - **Training objectives** (what is optimized): SFT, RLHF, DPO, GRPO
